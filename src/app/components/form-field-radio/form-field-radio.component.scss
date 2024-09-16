@@ -1,0 +1,34 @@
+.form-field-radio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5em 1em;
+  border: 1px solid var(--color-green500);
+  border-radius: 0.5em;
+  color: var(--color-green900);
+
+  > label {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+
+    > span {
+      height: 1em;
+      width: 1em;
+      border-radius: 50%;
+      border: 1px solid var(--color-green500);
+    }
+
+    > input[type="radio"]:checked ~ span {
+      background-image: url("/images/icon-radio-selected.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1em;
+      border-color: var(--color-green600);
+    }
+  }
+}

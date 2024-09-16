@@ -1,0 +1,14 @@
+<div class="form-field-radio">
+  <label [for]="inputId">
+    <input
+      #radio
+      [name]="name"
+      type="radio"
+      [id]="inputId"
+      [value]="value"
+      (change)="onInputChange()"
+    />
+    <span class="form-field-radio__checked"></span>
+    <ng-content></ng-content>
+  </label>
+</div>
