@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/fonts.scss";
+
+:root {
+  --color-green200: hsl(148, 38%, 91%);
+  --color-green500: hsl(186, 15%, 59%);
+  --color-green600: hsl(169, 82%, 27%);
+  --color-green900: hsl(187, 24%, 22%);
+  --color-red: hsl(0, 66%, 54%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "karla";
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  line-height: 1.5;
+  background-color: var(--color-green200);
+  display: grid;
+  align-items: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+input {
+  outline: none;
+  color: var(--color-green900);
+  border: 1px solid var(--color-green500);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+
+  &:focus {
+    border-color: var(--color-green600);
+  }
+
+  &[aria-invalid="true"] {
+    border-color: var(--color-red);
+  }
+
+  &[type="radio"] {
+    display: none;
+  }
+}
+
+button {
+  border: none;
+  margin-top: 1em;
+  padding: 1em;
+  cursor: pointer;
+  background-color: var(--color-green600);
+  color: var(--color-white);
+  border-radius: 10px;
+}
