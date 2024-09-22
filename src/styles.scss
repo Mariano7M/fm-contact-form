@@ -97,4 +97,8 @@ button {
   background-color: var(--color-green600);
   color: var(--color-white);
   border-radius: 10px;
+
+  &:focus {
+    outline-color: var(--color-green600);
+  }
 }

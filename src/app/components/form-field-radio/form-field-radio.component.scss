@@ -9,6 +9,11 @@
   border-radius: 0.5em;
   color: var(--color-green900);
 
+  &:focus {
+    outline: none;
+    border-color: var(--color-green600);
+  }
+
   > label {
     width: 100%;
     display: grid;

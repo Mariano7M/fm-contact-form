@@ -7,6 +7,14 @@
   padding: 0.5em 0;
   color: var(--color-green900);
 
+  &:focus {
+    outline: none;
+    border-color: var(--color-green600);
+    > label > span {
+      border-color: var(--color-green600);
+    }
+  }
+
   > label {
     display: grid;
     grid-template-columns: auto 1fr;
