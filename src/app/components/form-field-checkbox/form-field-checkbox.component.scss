@@ -36,7 +36,7 @@
     }
 
     > input[type="checkbox"]:checked ~ span {
-      background-image: url("/assets/images/icon-checkbox-check.svg");
+      background-image: url("~src/assets/images/icon-checkbox-check.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 1em;

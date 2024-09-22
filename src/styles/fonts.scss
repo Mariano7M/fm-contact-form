@@ -1,7 +1,7 @@
 @mixin fontFamily($name, $fileName, $weight, $sytle) {
   @font-face {
     font-family: $name;
-    src: url("/assets/fonts/#{$fileName}.ttf") format("truetype");
+    src: url("~src/assets/fonts/#{$fileName}.ttf") format("truetype");
     font-weight: $weight;
     font-style: $sytle;
     font-display: swap;
