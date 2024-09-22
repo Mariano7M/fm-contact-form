@@ -29,9 +29,9 @@
                 "input": "public"
               },
               {
-                "input": "public/fonts",
                 "glob": "**/*",
-                "output": "fonts"
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": ["src/styles.scss"],
