@@ -34,4 +34,12 @@ jobs:
       run: npm run test:ci
     
     - name: Build
-      run: npm run build
+      run: npm run build:prod
+    
+    - name: Deploy to github pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: fm-contact-form/dist/browser
+        branch: prod
+        token: ${{ secrets.GH_TOKEN }}
+      
