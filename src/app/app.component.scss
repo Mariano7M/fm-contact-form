@@ -1,0 +1,68 @@
+.contact-form {
+  background-color: var(--color-white);
+  margin: 1rem;
+  padding: 1em;
+  border-radius: 15px;
+  display: grid;
+  grid-column: 1fr;
+
+  > h1 {
+    color: var(--color-green900);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+}
+
+@media (width > 450px) {
+  .contact-form {
+    max-width: 700px;
+    display: grid;
+    margin-inline: auto;
+    grid-template-areas:
+      "title title"
+      "name lastName"
+      "email email"
+      "radioGroup radioGroup"
+      "message message"
+      "checkbox checkbox"
+      "submit submit";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 1em;
+    padding: 2em;
+
+    > h1 {
+      grid-area: title;
+      margin-bottom: 0.5em;
+    }
+
+    > app-form-field[inputId="name"] {
+      grid-area: name;
+    }
+
+    > app-form-field[inputId="lastName"] {
+      grid-area: lastName;
+    }
+
+    > app-form-field[inputId="email"] {
+      grid-area: email;
+    }
+
+    > app-form-field-radio-group {
+      grid-area: radioGroup;
+    }
+
+    > app-form-field[inputId="message"] {
+      grid-area: message;
+    }
+
+    > app-form-field-checkbox {
+      grid-area: checkbox;
+    }
+
+    > button {
+      grid-area: submit;
+    }
+  }
+}
