@@ -23,7 +23,7 @@
 body {
   position: relative;
   width: 100dvw;
-  height: 100dvh;
+  min-height: 100dvh;
   line-height: 1.5;
   background-color: var(--color-green200);
   display: grid;
