@@ -67,9 +67,15 @@ h6 {
   border: 1px solid var(--color-green500);
   padding: 0.5em 1em;
   border-radius: 0.5em;
+  cursor: pointer;
 
   &:focus {
     border-color: var(--color-green600);
+  }
+
+  &:active {
+    border-color: var(--color-green600);
+    background-color: var(--color-green200);
   }
 
   &[aria-invalid="true"] {
@@ -100,5 +106,15 @@ button {
 
   &:focus {
     outline-color: var(--color-green600);
+  }
+
+  &:hover {
+    border: 1px solid var(--color-green600);
+  }
+
+  &:active {
+    border: 1px solid var(--color-green600);
+    color: var(--color-green600);
+    background-color: var(--color-green200);
   }
 }

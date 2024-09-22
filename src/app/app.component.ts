@@ -53,7 +53,6 @@ export class AppComponent {
   }
 
   onSubmit(): void {
-    console.log(this.contactForm.value);
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
       return;
