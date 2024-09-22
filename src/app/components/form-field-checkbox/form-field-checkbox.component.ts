@@ -34,21 +34,21 @@ export class FormFieldCheckboxComponent
 
   @ViewChild('checkbox') checkbox!: ElementRef<HTMLInputElement>;
 
-  private _value: boolean = false;
+  isChecked: boolean = false;
 
   ngAfterViewInit() {
-    this._value = this.value;
+    this.isChecked = this.value;
   }
 
   onChange!: (value: boolean) => void;
   onTouched!: () => void;
 
   onInputChange() {
-    this._value = !this._value;
-    this.onChange(this._value);
+    this.isChecked = !this.isChecked;
+    this.onChange(this.isChecked);
   }
   writeValue(value: boolean): void {
-    this._value = value;
+    this.isChecked = value === null ? false : value;
   }
   registerOnChange(fn: any): void {
     this.onChange = fn;
