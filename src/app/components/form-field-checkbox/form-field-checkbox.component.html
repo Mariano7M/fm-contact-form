@@ -1,0 +1,17 @@
+<div class="form-field-checkbox">
+  <label [for]="inputId">
+    <input
+      #checkbox
+      [name]="name"
+      type="checkbox"
+      [id]="inputId"
+      [value]="value"
+      (change)="onInputChange()"
+    />
+    <span></span>
+    <ng-content></ng-content>
+  </label>
+  <span class="form-field-checkbox__error">
+    <ng-content select="field-error"></ng-content>
+  </span>
+</div>
