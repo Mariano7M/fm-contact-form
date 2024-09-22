@@ -10,6 +10,7 @@ import {
 import { FormFieldRadioComponent } from './components/form-field-radio/form-field-radio.component';
 import { FormFieldRadioGroupComponent } from './components/form-field-radio-group/form-field-radio-group.component';
 import { FormFieldCheckboxComponent } from './components/form-field-checkbox/form-field-checkbox.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ import { FormFieldCheckboxComponent } from './components/form-field-checkbox/for
     FormFieldRadioComponent,
     FormFieldRadioGroupComponent,
     FormFieldCheckboxComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
