@@ -11,7 +11,6 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 @Component({
   selector: 'app-form-field-radio',
   standalone: true,
-
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -47,7 +46,7 @@ export class FormFieldRadioComponent
     this.onChange(this.value);
   }
 
-  writeValue(value: any): void {
+  writeValue(value: string): void {
     this._value = value;
     this.updateChecked();
   }
