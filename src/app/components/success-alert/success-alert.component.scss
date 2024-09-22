@@ -1,0 +1,37 @@
+.success-alert {
+  --alert-width: 90%;
+  position: absolute;
+  top: 1em;
+  width: var(--alert-width);
+  left: calc((100% - var(--alert-width)) / 2);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5em 0;
+  background-color: var(--color-green900);
+  border-radius: 15px;
+
+  padding: 1em;
+  &__title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-green200);
+  }
+
+  &__message {
+    font-size: 0.9rem;
+    color: var(--color-green500);
+    text-align: center;
+  }
+}
+
+@media (width > 450px) {
+  .success-alert {
+    --alert-width: 30%;
+  }
+}
