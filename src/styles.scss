@@ -60,7 +60,7 @@ h6 {
   isolation: isolate;
 }
 
-input {
+@mixin input-styles {
   outline: none;
   color: var(--color-green900);
   border: 1px solid var(--color-green500);
@@ -74,10 +74,18 @@ input {
   &[aria-invalid="true"] {
     border-color: var(--color-red);
   }
+}
+
+input {
+  @include input-styles;
 
   &[type="radio"] {
     display: none;
   }
+}
+
+textarea {
+  @include input-styles;
 }
 
 button {
