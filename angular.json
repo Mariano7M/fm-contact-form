@@ -34,6 +34,7 @@
                 "output": "assets"
               }
             ],
+            "externalDependencies": ["fonts/*"],
             "styles": ["src/styles.scss"],
             "scripts": []
           },
