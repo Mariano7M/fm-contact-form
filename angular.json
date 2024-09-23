@@ -27,14 +27,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              {
-                "glob": "**/*",
-                "input": "src/assets",
-                "output": "/fm-contact-form/assets"
               }
             ],
-            "externalDependencies": ["assets/images/icon-checkbox-check.svg"],
             "styles": ["src/styles.scss"],
             "scripts": []
           },
